@@ -1,6 +1,7 @@
 // LIBRARIES
 import React, { useState } from 'react';
 import { FlatList, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useDispatch, useSelector } from 'react-redux';
 
 // CUSTOM COMPONENTS
@@ -16,6 +17,7 @@ import { getHeaderTitle, getShows } from '@redux/reduxSelectors';
 import style from './style';
 
 function Home() {
+  const insets = useSafeAreaInsets();
   const dispatch = useDispatch();
   const shows = useSelector((state) => getShows(state));
   const headerTitle = useSelector((state) => getHeaderTitle(state));
@@ -32,7 +34,7 @@ function Home() {
   };
 
   return (
-    <View style={style.container}>
+    <View style={[style.container, { paddingTop: insets.top }]}>
       <RNStatusBar />
       <SearchBarHeader headerTitle={headerTitle} value={searchString} onChangeText={(text) => setSearchString(text)} />
       <View style={style.dataContainer}>
