@@ -9,5 +9,6 @@ export default StyleSheet.create({
   dataContainer: {
     flex: 1,
     marginHorizontal: 5,
+    marginTop: 10,
   },
 });
