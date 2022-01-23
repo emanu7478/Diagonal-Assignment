@@ -2,6 +2,11 @@ import * as types from './types';
 
 const initialState = {
   shows: [],
+  title: '',
+  currentPage: 0,
+  pageSize: 20,
+  totalContents: 54,
+  paginationStatus: false,
 };
 
 const reducer = (state = initialState, action) => {
@@ -9,10 +14,11 @@ const reducer = (state = initialState, action) => {
 
   switch (action.type) {
     case types.FETCH_SHOWS:
-      return Object.assign({
+      return {
         ...state,
-        shows: action.payload,
-      });
+        shows: [...state.shows, ...action.payload.page.content_items.content],
+        currentPage: action.pageNo,
+      };
   }
   return newState;
 };

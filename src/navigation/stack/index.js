@@ -1,16 +1,20 @@
 // LIBRARIES
 import React from 'react';
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
+import LinearGradient from 'react-native-linear-gradient';
 
 // SCREEN ROUTES
 import * as Screens from '../routes';
 
 // STYLES
 import * as colors from '@constants/colors';
+import { Image, Platform, StyleSheet, useWindowDimensions } from 'react-native';
+import RNHeaderBgd from '@components/RNHeaderBgd';
 
 const Stack = createStackNavigator();
 
 const ScreensStack = () => {
+  const { width } = useWindowDimensions();
   return (
     <Stack.Navigator
       screenOptions={{
@@ -33,8 +37,9 @@ const ScreensStack = () => {
               backgroundColor: colors.PRIMARY,
             },
             headerTitleStyle: {
-              color: colors.WHITE,
+              flex: 1,
             },
+            headerBackground: () => <RNHeaderBgd />,
           };
         }}
       />
