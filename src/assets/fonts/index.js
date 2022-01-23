@@ -1,0 +1,11 @@
+export const PRIMARY_FONT_REGULAR = 'TitilliumWeb-Regular';
+export const PRIMARY_FONT_ITALIC = 'TitilliumWeb-Italic';
+export const PRIMARY_FONT_EXTRA_LIGHT = 'TitilliumWeb-ExtraLight';
+export const PRIMARY_FONT_EXTRA_LIGHT_ITALIC = 'TitilliumWeb-ExtraLightItalic';
+export const PRIMARY_FONT_LIGHT = 'TitilliumWeb-Light';
+export const PRIMARY_FONT_LIGHT_ITALIC = 'TitilliumWeb-LightItalic';
+export const PRIMARY_FONT_SEMI_BOLD = 'TitilliumWeb-SemiBold';
+export const PRIMARY_FONT_SEMI_BOLD_ITALIC = 'TitilliumWeb-SemiBoldItalic';
+export const PRIMARY_FONT_BOLD = 'TitilliumWeb-Bold';
+export const PRIMARY_FONT_BOLD_ITALIC = 'TitilliumWeb-BoldItalic';
+export const PRIMARY_FONT_BLACK = 'TitilliumWeb-Black';
