@@ -41,6 +41,5 @@ module.exports = {
     'react-native/no-inline-styles': 1,
     'react-native/no-raw-text': 1,
     'react-native/no-single-element-style-arrays': 1,
-    'require-await': 2,
   },
 };

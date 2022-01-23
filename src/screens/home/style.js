@@ -7,6 +7,7 @@ export default StyleSheet.create({
     backgroundColor: colors.PRIMARY,
   },
   dataContainer: {
+    flex: 1,
     marginHorizontal: 5,
   },
 });

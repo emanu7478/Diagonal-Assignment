@@ -18,6 +18,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         shows: [...state.shows, ...action.payload.page.content_items.content],
         currentPage: action.pageNo,
+        title: action.title,
       };
   }
   return newState;

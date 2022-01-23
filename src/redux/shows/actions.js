@@ -1,5 +1,4 @@
 /* eslint-disable no-unsafe-optional-chaining */
-/* eslint-disable require-await */
 import * as types from './types';
 // CONSTANTS
 import contents1 from '@constants/data/CONTENTLISTINGPAGE-PAGE1.json';
@@ -13,7 +12,7 @@ export const fetchShows = () => async (dispatch, getState) => {
   let pageNo = currentState?.shows?.currentPage;
   const pageSize = currentState?.shows?.pageSize;
   if (pageNo === 0) {
-    dispatch({ type: types.FETCH_SHOWS, payload: contents1, pageNo: pageNo + 1 });
+    dispatch({ type: types.FETCH_SHOWS, payload: contents1, pageNo: pageNo + 1, title: contents1?.page?.title });
   } else if (pageNo * pageSize < currentState?.shows?.totalContents) {
     // This will work till until total contents are fetched
     let content = [];
@@ -22,6 +21,6 @@ export const fetchShows = () => async (dispatch, getState) => {
     } catch (err) {
       // console.log(err);
     }
-    dispatch({ type: types.FETCH_SHOWS, payload: content, pageNo: pageNo + 1 });
+    dispatch({ type: types.FETCH_SHOWS, payload: content, pageNo: pageNo + 1, title: content?.page?.title });
   }
 };
