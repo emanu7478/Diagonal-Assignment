@@ -1,4 +1,3 @@
-/* eslint-disable no-unsafe-optional-chaining */
 import * as types from './types';
 // CONSTANTS
 import contents1 from '@constants/data/CONTENTLISTINGPAGE-PAGE1.json';
