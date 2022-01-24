@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.diagonal_assignment">
+  package="com.diagonal.shows">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

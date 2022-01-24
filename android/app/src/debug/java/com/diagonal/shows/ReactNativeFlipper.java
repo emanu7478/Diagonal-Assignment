@@ -4,7 +4,7 @@
  * <p>This source code is licensed under the MIT license found in the LICENSE file in the root
  * directory of this source tree.
  */
-package com.diagonal_assignment;
+package com.diagonal.shows;
 
 import android.content.Context;
 import com.facebook.flipper.android.AndroidFlipperClient;

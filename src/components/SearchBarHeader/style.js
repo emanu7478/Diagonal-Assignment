@@ -1,6 +1,5 @@
 import { StyleSheet } from 'react-native';
 import * as colors from '@constants/colors';
-import * as fonts from '@assets/fonts';
 
 export default StyleSheet.create({
   container: {
@@ -26,7 +25,6 @@ export default StyleSheet.create({
     fontSize: 17,
     color: colors.WHITE,
     paddingLeft: 5,
-    fontFamily: fonts.PRIMARY_FONT_REGULAR,
   },
   searchIcon: {
     height: 20,
@@ -50,10 +48,8 @@ export default StyleSheet.create({
   input: {
     flex: 1,
     color: colors.WHITE,
-    fontFamily: fonts.PRIMARY_FONT_REGULAR,
   },
   placeholderText: {
     color: colors.WHITE,
-    fontFamily: fonts.PRIMARY_FONT_REGULAR,
   },
 });

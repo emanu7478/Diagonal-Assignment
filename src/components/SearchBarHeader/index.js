@@ -16,7 +16,7 @@ function SearchBarHeader(props) {
     if (enableTextInput) {
       Animated.timing(scaling, {
         toValue: 0,
-        duration: 200,
+        duration: 250,
         easing: Easing.linear,
         useNativeDriver: false,
       }).start(() => {
@@ -25,7 +25,7 @@ function SearchBarHeader(props) {
     } else {
       Animated.timing(scaling, {
         toValue: 1,
-        duration: 200,
+        duration: 250,
         easing: Easing.linear,
         useNativeDriver: false,
       }).start(() => {

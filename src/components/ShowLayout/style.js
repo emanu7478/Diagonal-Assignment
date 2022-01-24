@@ -1,6 +1,5 @@
 import { StyleSheet } from 'react-native';
 import * as colors from '@constants/colors';
-import * as fonts from '@assets/fonts';
 
 export default StyleSheet.create({
   layoutContainer: {
@@ -19,7 +18,6 @@ export default StyleSheet.create({
     resizeMode: 'cover',
   },
   text: {
-    fontFamily: fonts.PRIMARY_FONT_LIGHT,
     color: colors.WHITE,
     alignSelf: 'flex-start',
     textAlign: 'left',

@@ -1,4 +1,4 @@
-package com.diagonal_assignment;
+package com.diagonal.shows;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "diagonal_assignment";
+    return "Shows";
   }
 }
